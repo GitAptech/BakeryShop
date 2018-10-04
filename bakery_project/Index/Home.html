@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="../Images/https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../Images/https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="images/logo.png"/>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
+<script src="../Images/js/jquery-3.3.1.js"></script>
+<script src="../Images/js/Untitled-1.js"></script>
+<script src="../Images/https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    var show = 3;
+    var w = $('#slider').width() / show;
+    var l = $('.slidee').length;
+    
+    $('.slidee').width(w);
+    $('#slide-container').width(w * l)
+    
+    function slider() {
+        $('.slidee:first-child').animate({
+            marginLeft: -w
+        }, 'slow', function () {
+            $(this).appendTo($(this).parent()).css({marginLeft: 0});
+        });
+    }
+    var timer = setInterval(slider, 2000);
+    
+    $('#slider').hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(slider, 2000);
+    });
+});
+</script>
+<style>
+body{
+margin:0;
+padding:0;}
+.navbar-custom{
+background-color:#00CCFF;
+color:#FF0000;
+font-size:28px;
+font-family:'sofia';
+padding-top:6px;}
+#home{
+background-color:#00CC00;}
+.text:hover{
+text-decoration:underline;}
+.icon-bar{
+background-color:#00CC00;}
+/*emd navigation bar*/
+/*start sitemenu*/
+.sidebar {
+  margin:0;
+  padding-left:55px;
+  width: 280px;
+  background-color:#00CCCC;
+  height: 98%;
+  overflow: auto;
+  position:absolute;
+  padding-top:37px;
+   margin-left:20px;
+  margin-top:20px;
+  border-radius:50px;
+  border:2px dotted red;
+}
+
+.sidebar a {
+  display: block;
+  color: purple;
+  padding-bottom: 12px;
+  text-decoration: none;
+  font-size:28px;
+}
+.sidebar a:hover:not(.active) {
+ text-decoration:underline;
+  color: white;
+}
+/* side sidnev on collapse*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.secondspan{
+display:none;}
+.sidenav .sidemenu {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .sidemenu:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+	margin-top:70px;
+}
+/*end side sidnev*/
+.large-window {
+  margin-left:160px;
+  margin-right:190px;
+  height: 940px;
+  background-image:url(../Images/funpark.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 50%;
+  position: relative; }
+.large-window .window-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; }
+ .large-window .promo-text {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2; }
+  .large-window .promo-text strong {
+      display: block;
+      font-size: 30px; }
+  .large-window .promo-text span {
+      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.6); }
+.large-window .promo-text .window-cta {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out; }
+.large-window .promo-text .window-cta:hover {
+        background: white;
+        color: black; }
+.row-2{
+	display:flex;
+	width:80%;
+
+	border-spacing:20px;
+}
+
+.column-2 img {
+  
+    transition: transform .2s;
+   
+}
+.column-2 img:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+}
+
+.heading{
+	text-align:center;
+	font-family:'sofia';
+	font-size:42px;
+	color:#09F;
+}
+.line{
+	background-color:#000;
+	width:70%;
+	height:2px;
+	margin-bottom:30px;
+	margin-left:120px;
+	margin-right:10px;
+}
+.slidee {
+    height:450px;
+    float:left;
+    text-align:center;
+    
+	line-height:8em;
+	font-size:40px;
+	border-right-color:#333;
+}
+.heading-2{
+	color:#09F;
+	text-align:center;
+	font-size:25px;
+	font-family:'sofia';
+}
+#slider {
+    height:450px;
+    width:80%;
+	margin:auto;
+    overflow:hidden;
+    background:#FFF;
+}
+/*footer*/
+.footer{
+    position:relative;
+    left: 0px;
+    bottom: 0px;
+  
+    color: white;
+    text-align: center;
+	height:100%;
+	}
+	.footerimage img{
+	width:70px;
+	margin-left:-16px;}
+.heading1{
+font-size:36px;
+}
+.para1{
+font-size:18px;
+color:white;}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+   display:none;}
+   .secondspan{
+   display:block;}
+}
+
+@media screen and (max-width: 400px) {
+ 
+}
+.row {
+	margin-top:10px;
+	margin-left:300px;
+	margin-right:20px;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 3px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+	width: 25%;
+}
+.column:hover {
+   margin-top:-2px;
+}
+
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 2px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .container{
+	border:none;}
+    .column {
+        width: 30%;
+    }
+	 .column:hover {
+       border:none;
+    }
+	.image{
+	margin-left:-320px;
+	border-right:17px;}
+	.line{
+	margin-left:40px;}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+.hvr-float-shadow {
+  display:inline-block;
+  vertical-align:middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+</style>
+</head>
+
+<body>
+<div class="container-fluid">
+<nav class="navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <img src="../Images/logo3" style="width:150px; height:auto;" />
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" id="home"><a href="#">Home</a></li>
+       <li class="text"><a href="#">Offers</a></li>
+	    <li class="text"><a href="#">Rides</a></li>
+	    <li class="text" ><a href="#">Contact us</a></li>
+		 <li class="text" id="aboutus"><a href="#">About us</a></li>
+		  <li class="text"><a href="#">Feedback</a></li>
+          </ul>
+    </div>
+  </div>
+</nav>
+</div>
+ <div class="container-fluid">
+<div id="xyz" class="carousel slide">
+<ul class="carousel-indicators">
+<li data-target="#xyz" data-slide-to="0" class="active"></li>
+<li data-target="#xyz" data-slide-to="1"></li>
+<li data-target="#xyz" data-slide-to="2"></li>
+<li data-target="#xyz" data-slide-to="3"></li>
+<li data-target="#xyz" data-slide-to="4"></li>
+</ul>
+<div class="carousel-inner">
+<div class="item active">
+<img src="../Images/pic1.png" style="width:100%; height:630px;" />
+<div class="carousel-caption"id="slide1">ADVENTURES <br />RIDES</div>
+</div>
+<div class="item">
+<img src="../Images/slide2.jpg" style="width:100%; height:630px;" />
+<div class="carousel-caption"id="slide2">KIDZ  FUNLAND</div>
+</div>
+<div class="item">
+<img src="../Images/slide3.jpg" style="width:100%; height:630px;" />
+<div class="carousel-caption"id="slide3">CONCERTS</div>
+</div>
+<div class="item">
+<img src="../Images/slide4.png" style="width:100%; height:630px;" />
+<div class="carousel-caption"id="slide4">rides</div>
+</div>
+<div class="item">
+<img src="../Images/slide5.jpg" style="width:100%; height:630px;" />
+<div class="carousel-caption"id="slide5">FUNZONE MUSEUM</div>
+</div>
+</div>
+<a class="left carousel-control" href="#xyz" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"id="signs"></span></span></a>
+<a class="right carousel-control" href="#xyz" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"id="signs"></span></span></a>
+</div>
+</div>
+<div class="sidebar">
+ <a href="#about">Experience</a>
+  <a href="#services">Leisure And Dinning</a>
+  <a href="#clients">Parks Character</a>
+  <a href="#contact">What's up</a>
+<a href="#clients">Park information</a>
+  <a href="#contact">Bussiness Opportunities</a>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"class="sidemenu">Experience</a>
+  <a href="#" class="sidemenu">Leisure And Dining</a>
+  <a href="#" class="sidemenu">Parks Character</a>
+  <a href="#" class="sidemenu">What's Up</a>
+  <a href="#" class="sidemenu">Park Information</a>
+  <a href="#" class="sidemenu">Bussiness Opportunities</a>
+</div>
+
+<span class="secondspan"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="row">
+  <div class="column">
+  <div class="content">
+    <div class="content3">
+	<div class="image">
+      <img src="../Images/web img1.jpg" alt="Mountains"style="width:100%; height:200px;">
+</div>
+</div>
+</div>
+  </div>
+  <div class="column">
+  <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img2.jpg" alt="Lights"style="width:100%; height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img3.jpg" alt="Nature" style="width:100%;height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img4.jpg" alt="Nature" style="width:100%;height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+ 
+<!-- END GRID -->
+</div>
+<div class="row">
+  <div class="column">
+  <div class="content">
+    <div class="content3">
+	<div class="image">
+      <img src="../Images/web img5.jpg" alt="Mountains"style="width:100%; height:200px;">
+</div>
+</div>
+</div>
+  </div>
+  <div class="column">
+  <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img6.jpg" alt="Lights"style="width:100%; height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img7.jpg" alt="Nature" style="width:100%;height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img8.jpg" alt="Nature" style="width:100%;height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+  </div>
+ <div class="row">
+  <div class="column">
+  <div class="content">
+    <div class="content3">
+	<div class="image">
+      <img src="../Images/web img9.jpg" alt="Mountains"style="width:100%; height:200px;">
+</div>
+</div>
+  </div>
+  </div>
+  <div class="column">
+  <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img10.jpg" alt="Lights"style="width:100%; height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+   <div class="column">
+  <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img11.jpg" alt="Lights"style="width:100%; height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+   <div class="column">
+  <div class="content">
+	 <div class="content3">
+	<div class="image">
+    <img src="../Images/web img12.jpg" alt="Lights"style="width:100%; height:200px;">
+</div>
+</div>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+ <div class="line"></div>
+     <div class="large-window">
+          <div class="window-tint">
+            <div class="promo-text">Fall Suits<strong><span>from</span> $99</strong><a href="" class="window-cta">Play Now</a></div>
+          </div>
+        </div>
+		<div class="line"></div>
+		 <div class="heading-2">
+		<h1>The Adventurer Rides Of FunZone</h1></div>
+		 <div class="rides">
+ <div class="col-sm-4">
+ <img src="../Images/park character4.jpg" class="img-circle" style="width:80%; height:200px;" />
+ </div>
+  <div class="col-sm-4">
+ <img src="../Images/park character2.jpg" class="img-circle" style="width:80%; height:200px;" />
+ </div>
+  <div class="col-sm-4">
+ <img src="../Images/park character14.jpg" class="img-circle" style="width:80%; height:200px;" />
+ </div>
+ </div>
+	<div class="heading">
+    	<h1>Park sections</h1>
+        <div class="line"></div>
+    </div>
+	<div class="row-2">
+    <div class="column-2">
+    	<img src="../Images/akri2.jpg" width="248px" height="260px" />
+       <img src="../Images/kidz.jpg" width="248px" height="260px" />
+        <img src="../Images/10.jpg" width="248px" height="260px" />
+        <img src="../Images/watr park.jpg" width="248px" height="260px" />
+        </div>
+    </div>
+	  <div class="heading-2">
+    	<h1>Coming Soon</h1>
+        <div class="line"></div>
+    </div>
+    <body  background="../Images/background2.png">
+<h1 style="text-align:center; margin-top:60px; color:#fff; font-size:60px"></h1>
+<div id="slider">
+    <div id="slide-container">
+        <div class="slidee"><img src="../Images/shockwave.jpg" width="500px" height="334px"></div>
+        <div class="slidee"><img src="../Images/coming soon img1.jpg" width="400px" height="334px"></div>
+        <div class="slidee"><img src="../Images/coming soon img2.jpg" width="400px" height="334px"></div>
+        <div class="slidee"><img src="../Images/coming soon img6.jpg" width="400px" height="334px"></div>
+        <div class="slidee"><img src="../Images/coming soon img4.jpg" width="400px" height="334px" ></div>
+        <div class="slidee"><img src="../Images/coming soon img5.jpg" width="400px" height="334px"></div>
+    </div>
+</div>
+</body>
+<div class="heading">
+    	<h1><b>What's New In 2018??</b></h1>
+        <div class="line"></div>
+		<h1>The Animal Land</h1>
+		<div class="new">
+		<img src="../Images/new.png"class="img-responsive" style="width:100%; height:350px;" />
+		</div>
+    </div>
+	<div class="heading">
+	<h1>GUEST'S  REVIEWS  ABOUT  FUNZONE</h1></div>
+	   <div class="line"></div>
+<div class="reviews">
+<center><img src="../Images/reviews.png"style="width:75%; height:280px;" /></center>
+</div>
+<div style="background-image:url('../Images/backround.jpg'); background-size:cover;">
+
+<div class="footer">
+<div class="containerfluid">
+    <div class="col-sm-4">
+    <div class="heading1" style="font-family:sofia;color:#990066;"> Location </div>
+    <div class="para1" style="font-family:'sofia';color:#990066;">Aptech Computer Education SD 1,&nbsp;<br />Block A, North Nazimabad, Karachi</div>
+    </div>
+    <div class="col-sm-4">
+    <div class="heading1" style="font-family:'sofia';color:#990066;">Contact US:</div>
+    <div class="para1" style="font-family:'sofia';color:#990066;">Phone: +92_3483487922<br />Fax:+92_3111661668</div>
+    </div>
+    <div class="col-sm-4">
+    <div class="heading1" style="font-family:'sofia';color:#990066;">Query & Booking	&#58;
+	</div>
+    <div class="para1" style="font-family:'sofia';color:#990066;"><a href="https://mail.google.com/mail/u/0/#inbox"id="abc">hk758921@gmail.com </a> <br />Payment Methods	&#58;</div>
+         
+          <br />
+          <div class="hvr-float-shadow"><img src="../images/HBL CARD.jpg"  width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/SBI CARD.png" width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/BANK-ALFALAH3.png" width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/MEEZAN-BANK3.png"  width="80px" height="45px"/></div>
+          
+    </div>
+
+
+<section align="center"><h3 style="font-family:'sofia';color:#990066;">Follow Us	&#58;</h3></section>
+<center><div class="linee" style="width:50%; height:2px; background-color:#990066;"></div></center>
+<a href="https://business.facebook.com/FunZonePlay/?business_id=1506739329416161"target="_blank"><img src="../Images/../images/fb.png" title="facebook" width="70" height="50" class="animated bounce"id="last"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://twitter.com/FunZoneChicago"target="_blank"><img src="../Images/../images/tw.png" title="twitter" width="70" height="50" class="animated bounce"id="last1"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              
+<a href="https://www.yelp.com/biz/fun-zone-downers-grove" target="_blank"><img src="../Images/../images/Yelp.png" title="youtube" width="70" height="50"class="animated bounce"id="last2"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/funzonechicago/?hl=en" target="_blank"><img src="../Images/../images/in.png" title="instagram" width="70" height="50"class="animated bounce"id="last3"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+<div class="heading6" style="font-family:'sofia';font-size:20px;color:#990066;">Copyrights &copy; 2018 All rights reserved for FUN_ZONE.</div>        
+</div>              
+</div>
+</div>
+<script>
+function animationHover(element, animation){
+    element = $(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);        
+        },
+        function(){
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);         
+        });
+}
+$(document).ready(function(){
+    $('#last').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last1').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last2').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last3').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+
+</script>
+</body>
+</html>

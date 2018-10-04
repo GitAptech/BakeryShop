@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FunZone/Event/WhaleEvent</title>
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+   <style>
+ .navbar-custom{
+ background-color:#32CD32;
+font-size:30px;
+font-family:'sofia';
+padding-top:6px;
+opacity:.9;}
+.text:hover{
+text-decoration:underline;}
+.text2{
+background-color:#990066;}
+.icon-bar{background-color:#990066;}
+#text2 {
+background-color:#990066;}
+.heading{
+color:#990066;
+font-size:36px;
+font-family:'sofia';
+margin-top:120px;
+text-align:center;}
+.img-1{
+margin-top:10px;
+left:10px;
+text-align:center;}
+.img-2{
+text-align:center;
+margin-top:8px;}
+.date{
+color:#990066;
+font-size:25px;
+font-family:'sofia';
+text-align:center;}
+.para{
+font-size:16px;
+text-align:center;
+font-family:'sofia';}
+h3{
+color:white;
+font-size:32px;
+text-align:center;
+font-family:'sofia';}
+.footer{
+    position:relative;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+	height:100%;
+	}
+	.footerimage img{
+	width:70px;
+	margin-left:-16px;}
+.heading1{
+font-size:36px;
+}
+.para1{
+font-size:18px;
+color:white;}
+
+/*next hover effect*/
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+#abc{color:#963;}
+</style>
+</head>
+
+<body>
+<nav class="navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	   <img src="../images/logo5.png" style="width:230px; height:80px;" class="img-circle"/>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+         <li class="text" ><a href="../Index/Home.html" style="color:#990066;">Home</a></li>
+       <li class="text"><a href="offers page.html"style="color:#990066;">Offers</a></li>
+	    <li class="text" ><a href="Rides page.html"style="color:#990066;">Rides</a></li>
+	    <li class="text" ><a href="ContactUs page.html"style="color:#990066;">Contact us</a></li>
+		 <li class="text"><a href="AboutUs page.html"style="color:#990066;">About us</a></li>
+		 <li class="text"><a href="Feedback page.html"style="color:#990066;">Feedback</a></li>
+		  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown"id="text2" href="#"style="color:#00CCCC;">More
+        <span class="caret"></span></a>
+          <ul class="dropdown-menu"style="background-color:#32CD32;">
+          <li class="text" ><a href="Experience Page.html"style="color:#990066;font-size:22px;">Experience</a></li>
+          <li class="text" ><a href="Leisure and Dining.html"style="color:#990066;font-size:22px;">Leisure And Dining</a></li>
+          <li class="text" ><a href="ParkCharacter page.html"style="color:#990066;font-size:22px;">Parks Characters</a></li>
+		  <li class="text2" ><a href="what's up page.html "style="color:#00CCCC;font-size:22px;">Whats Up</a></li>
+		  <li class="text" ><a href="ParkInfo page.html"style="color:#990066;font-size:22px;">Park Information</a></li>
+		   <li class="text" ><a href="Business oppurtunities page.html"style="color:#990066;font-size:22px;">Business Oppurtunities</a></li>
+          		   <li class="text" ><a href="AnimalLand page.html"style="color:#990066;font-size:22px;">Animal Land</a></li>
+
+        </ul>
+      </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+<div class="heading">
+<h1><b>The Snail And The Whale Trail</b></h1>
+</div>
+<img src="../images/event pic.png"class="img-responsive" style="width:100%; height:340px;" />
+<div class="img-1"><img src="../images/whale pic1.jpg" width="280px" height="200px"><img src="../images/whale pic2.jpg" width="280px" height="200px"><img src="../images/whale pic3.jpg" width="280px" height="200px"><br /><img src="../images/whale pic4.jpg" width="280px" height="200px"><img src="../images/whale pic5.jpg" width="280px" height="200px"><img src="../images/whale pic6.jpg" width="280px" height="200px">
+<br></div><div class="img-2"><img src="../images/whale pic7.jpg" width="280px" height="200px"><img src="../images/whale pic8.jpg" width="280px" height="200px"></div>
+<div class="date"><b>12 june-26 june 2018</b></div>
+<p class="para"><b>Get lost beneath the waves in our SEA LIFE centre and meet sharks, rays, jellyfish… and a snail?!<br />
+<br />
+
+In the undersea empire this year, there’s an unexpected creature with an itchy foot looking for a lift <br />around the world. The ‘tiny snail’ from Julia Donaldson’s much- loved book,   The Snail and the<br /> Whale, has gone on an underwater adventure –  can you spot her in our brand new The Snail <br />and the Whale Trail?<br />
+<br />
+
+As you voyage through a world of reefs, corals and lost ruins, try and find the tiny snail as she <br />journeys alongside our weird and wonderful sea creatures.
+
+  Spot the ‘tiny snail’ in all eight<br /> locations then enter Chessington’s exclusive prize draw! And that’s not all the Julia Donaldson  <br />fun to have at the Resort, with family favourite The Gruffalo River Ride Adventure back and brand  <br />new The Gruffalo Groove there’s plenty of adventures for all readers, big and small.</b></p></div>
+  <div style="background-image:url(../Images/background.jpg); background-size:cover;">
+
+<div class="footer">
+<div class="containerfluid">
+    <div class="col-sm-4">
+    <div class="heading1"style="font-family:'sofia';color:#990066;"> Location </div>
+    <div class="para2"style="font-family:'sofia';color:#990066;">Aptech Computer Education SD 1, <br />Block A,, North Nazimabad, Karachi</div>
+    </div>
+    <div class="col-sm-4">
+    <div class="heading1"style="font-family:'sofia';color:#990066;">Contact US:</div>
+    <div class="para2" style="font-family:'sofia';color:#990066;">Phone: +92_3483487922<br />Fax:+92_3111661668</div>
+    </div>
+    <div class="col-sm-4">
+    <div class="heading1" style="font-family:'sofia';color:#990066;">Query & Booking:</div>
+    <div class="para2" style="font-family:'sofia';color:#990066;"><a href="https://mail.google.com/mail/u/0/#inbox"id="abc">hk758921@gmail.com</a> <br />Payment Methods:</div>
+          <br />
+          <div class="hvr-float-shadow"><img src="../images/HBL CARD.jpg"  width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/SBI CARD.png" width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/BANK-ALFALAH3.png" width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/MEEZAN-BANK3.png"  width="80px" height="45px"/></div>
+          
+    </div>
+</div>
+
+<section align="center"><h3 style="font-family:'sofia';color:#990066;">Follow Us:</h3></section>
+<center><div class="line" style="width:50%; height:2px; background-color:#990066;"></div></center>
+<a href="https://business.facebook.com/FunZonePlay/?business_id=1506739329416161"target="_blank"><img src="../images/fb.png" title="facebook" width="70" height="50" class="animated bounce"id="last"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://twitter.com/FunZoneChicago"target="_blank"><img src="../images/tw.png" title="twitter" width="70" height="50" class="animated bounce"id="last1"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              
+<a href="https://www.yelp.com/biz/fun-zone-downers-grove" target="_blank"><img src="../images/Yelp.png" title="youtube" width="70" height="50"class="animated bounce"id="last2"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/funzonechicago/?hl=en" target="_blank"><img src="../images/in.png" title="instagram" width="70" height="50"class="animated bounce"id="last3"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+ <div class="heading6" style="font-family:'sofia'; font-size:20px;color:#990066;">Copyrights &copy; 2018 All rights reserved for FUN_ZONE.</div>                      </div>
+</div>
+
+<script>
+function animationHover(element, animation){
+    element = $(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);        
+        },
+        function(){
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);         
+        });
+}
+$(document).ready(function(){
+    $('#last').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last1').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last2').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last3').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+
+</script>
+</body>
+<html>

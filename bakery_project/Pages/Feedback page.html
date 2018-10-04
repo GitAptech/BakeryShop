@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> FunZone/Feedback</title>
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'/>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+  <style>
+ .navbar-custom{
+ background-color:#32CD32;
+font-size:30px;
+font-family:'sofia';
+padding-top:6px;
+opacity:.9;}
+.text:hover{
+text-decoration:underline;}
+.text2{
+background-color:#990066;}
+#text:hover{
+text-decoration:underline;}
+.icon-bar{
+background-color:#990066;}
+
+.header img{
+margin-top:10px;}
+.heading{
+text-align:center;
+font-size:26px;
+font-family:'sofia';
+color:#990066;}
+.para{
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+text-align:center;
+color:black;}
+.date{
+font-size:25px;
+color:red;
+font-family:'sofia';
+text-align:center;
+}
+
+a {
+font-family: "Sofia";
+}
+
+
+.submit:hover {
+opacity: 0.8;
+}
+
+.btn-responsive {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.scroll {
+position: absolute;
+right: 0px;
+top: 230px;
+z-index: 98;
+}
+@media screen and (max-width: 600px) {
+.header img{
+margin-top:27px;}
+.box{
+margin-left:76px;}
+h3{text-align:center;}
+}
+.footer{
+    position:relative;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+	height:100%;
+	}
+	.footerimage img{
+	width:70px;
+	margin-left:-16px;}
+.para{
+font-size:18px;
+color:white;}
+.heading1{
+font-size:36px;
+}
+@-webkit-keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+/*end*/
+/*next hover effect*/
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+#abc{color:#963;}
+</style>
+</head>
+
+<body>
+<nav class="navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	   <img src="../images/logo5.png" style="width:230px; height:80px;" class="img-circle"/>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+         <li class="text" ><a href="../Index/Home.html" style="color:#990066;">Home</a></li>
+       <li class="text"><a href="offers page.html"style="color:#990066;">Offers</a></li>
+	    <li class="text" ><a href="Rides page.html"style="color:#990066;">Rides</a></li>
+	    <li class="text" ><a href="ContactUs page.html"style="color:#990066;">Contact us</a></li>
+		 <li class="text"><a href="AboutUs page.html"style="color:#990066;">About us</a></li>
+		 <li class="text2"><a href="Feedback page.html"style="color:#00CCCC;">Feedback</a></li>
+		  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown"id="text" href="#"style="color:#990066;">More
+        <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color:#32CD32;">
+          <li class="text" ><a href="Experience Page.html"style="color:#990066;font-size:22px;">Experience</a></li>
+          <li class="text" ><a href="Leisure and Dining.html"style="color:#990066;font-size:22px;">Leisure And Dining</a></li>
+          <li class="text" ><a href="ParkCharacter page.html"style="color:#990066;font-size:22px;">Parks Characters</a></li>
+		  <li class="text" ><a href="what's up page.html "style="color:#990066;font-size:22px;">Whats Up</a></li>
+		  <li class="text" ><a href="ParkInfo page.html"style="color:#990066;font-size:22px;">Park Information</a></li>
+		   <li class="text" ><a href="Business oppurtunities page.html"style="color:#990066;font-size:22px;">Business Oppurtunities</a></li>
+          		   <li class="text" ><a href="AnimalLand page.html"style="color:#990066;font-size:22px;">Animal Land</a></li>
+
+
+        </ul>
+      </li>
+          </ul>
+    </div>
+  </div>
+</nav>
+ 
+
+<div class="container">
+
+<div class="col-sm-12">
+<center><img src="../images/feedback.jpg" alt="feedback" style="height:160px;width:950px; margin-top:100px;"class="img-responsive";></center>
+</div>
+
+<br><br><br>
+</div>
+<div  class="container">
+<div class="row " style="margin-top: 140px;">
+    <div class="col-sm-12 form-container">
+        <h3 style="font-family:Sofia; font-size: 40px;color:#990066;">
+            <b>Please provide your feedback below:</b>
+        </h3></div></div>
+        <form role="form" method="post" id="reused_form" action="Feedback.html">
+            <div class="row">
+                <center><div class="col-sm-12 form-group img-rounded" style="background-color:purple;color:white;width:60%;">
+                <p style="font-family:Sofia; font-size: 26px;">How do you rate the taste of our ride?</p>
+                <p style="font-family:Sofia; font-size: 16px;">
+                    <label class="radio-inline">
+                    <input type="radio" name="experience1" id="radio_experience" value="excellent" >
+                    Excellent
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience1" id="radio_experience" value="good" >
+                    Good
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience1" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+                </p></div></center>
+				</div>
+                <center><div class="col-sm-12 form-group img-rounded" style="background-color:#66CC00;color:white;width:60%;">
+                <p style="font-family:Sofia; font-size: 26px;">How Would You Rate the Cleanliness of the Park?</p>
+                <p style="font-family:Sofia; font-size: 16px;">
+                    <label class="radio-inline">
+                    <input type="radio" name="experience2" id="radio_experience" value="excellent" >
+                  Excellent
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience2" id="radio_experience" value="good" >
+                   Good
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience2" id="radio_experience" value="bad" >
+                   Bad
+                    </label>
+                </p>
+                </div></center>
+
+               <center> <div class="col-sm-12 form-group img-rounded" style="background-color:#CC33CC;color:white;width:60%;" >
+                <p style="font-family:Sofia; font-size: 26px;">How Would You Rate Our Staff’s Ability to Meet Your Needs?</p>
+                <p style="font-family:Sofia; font-size: 16px;">
+                    <label class="radio-inline">
+                    <input type="radio" name="experience3" id="radio_experience" value="excellent" >
+                   Excellent
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience3" id="radio_experience" value="good" >
+                   Good
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience3" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+                </p></div>
+				</center>
+               <br><br></center>
+                <center><div class="col-sm-12 form-group img-rounded" style="background-color:#66CC99;color:white;width:60%;">
+                <p style="font-family:Sofia; font-size: 26px;">How do you feel about the speed of your service?</p>
+                <p style="font-family:Sofia; font-size: 16px;">
+                    <label class="radio-inline">
+                    <input type="radio" name="experience4" id="radio_experience" value="excellent" >
+                    Excellent
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience4" id="radio_experience" value="good" >
+                    Good
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience4" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+                </p>
+                </div></center>
+			<div class="row">
+                <center><div class="col-sm-12 form-group img-rounded" style="background-color:purple;color:white;width:60%;">
+                <p style="font-family:Sofia; font-size: 26px;">How do you rate your overall experience?</p>
+                <p style="font-family:Sofia; font-size: 16px;">
+                    <label class="radio-inline">
+                    <input type="radio" name="experience5" id="radio_experience" value="excellent" >
+                    Excellent
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience5" id="radio_experience" value="Good" >
+                    Good
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience5" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+                </p>
+                </div><br><br></center>
+				</div>
+				<div class="box">
+                <div class="col-sm-12 form-group" style="width:60%;">
+                    <h3 for="name" style="font-family:Sofia; font-size: 40px;color:#990066;">
+                        Your Name:</h3>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-sm-12 form-group"style="width:60%;">
+                    <h3 for="email" style="font-family:Sofia; font-size: 40px;color:#990066;">
+                        Email:</h3>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            <div class="row">
+                <div class="col-sm-12  form-group"style="width:60%;">
+                    <h3 for="comments" style="font-family:Sofia; font-size: 40px;color:#990066;">
+                        Suggestions:</h3>
+                    <textarea class="form-control" type="textarea" name="comments" id="comments" required placeholder="Your Suggestions" maxlength="6000" rows="7" style="font-family:Sofia; font-size: 16px;"></textarea>
+                </div>
+            </div><br><br>
+
+                        <div class="row">
+                <div class="col-sm-12 form-group"style="width:60%;">
+                    <button type="submit" class="btn btn-lg btn-responsive submit" style="width:100%; font-family:Sofia; font-size: 40px; background-color: black; color: gray;">Submit your feedback</button><link href="feedback link.html">                
+</div>
+            </div>
+</div></div>
+        </form>
+		</div>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Submitted your feedback successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>
+    </div>
+</div>
+
+</div>
+<div style="background-image:url(../Images/background.jpg); background-size:cover;">
+
+<div class="footer">
+<div class="containerfluid">
+    <div class="col-sm-4">
+     <div class="heading1"style="font-family:'sofia';color:#990066;"> Location </div>
+    <div class="para2"style="font-family:'sofia';color:#990066;">Aptech Computer Education SD 1, <br />Block A,, North Nazimabad, Karachi</div>
+    </div>
+    <div class="col-sm-4">
+    <div class="heading1"style="font-family:'sofia';color:#990066;">Contact US:</div>
+    <div class="para2" style="font-family:'sofia';color:#990066;">Phone: +92_3483487922<br />Fax:+92_3111661668</div>
+    </div>
+    <div class="col-sm-4">
+    <div class="heading1" style="font-family:'sofia';color:#990066;">Query & Booking:</div>
+    <div class="para2" style="font-family:'sofia';color:#990066;"><a href="https://mail.google.com/mail/u/0/#inbox"id="abc" class="email">hk758921@gmail.com</a> <br />Payment Methods:</div>
+          <br />
+          <div class="hvr-float-shadow"><img src="../images/HBL CARD.jpg"  width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/SBI CARD.png" width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/BANK-ALFALAH3.png" width="80px" height="45px"/></div>
+          <div class="hvr-float-shadow"><img src="../images/MEEZAN-BANK3.png"  width="80px" height="45px"/></div>
+          
+    </div>
+</div>
+
+<section align="center"><h3 style="font-family:'sofia';color:#990066;">Follow Us:</h3></section>
+<center><div class="line" style="width:50%; height:2px; background-color:#990066;"></div></center>
+<a href="https://business.facebook.com/FunZonePlay/?business_id=1506739329416161"target="_blank"><img src="../images/fb.png" title="facebook" width="70" height="50" class="animated bounce"id="last"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://twitter.com/FunZoneChicago"target="_blank"><img src="../images/tw.png" title="twitter" width="70" height="50" class="animated bounce"id="last1"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              
+<a href="https://www.yelp.com/biz/fun-zone-downers-grove" target="_blank"><img src="../images/Yelp.png" title="youtube" width="70" height="50"class="animated bounce"id="last2"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/funzonechicago/?hl=en" target="_blank"><img src="../images/in.png" title="instagram" width="70" height="50"class="animated bounce"id="last3"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+ <div class="heading" style="font-family:'sofia'; font-size:20px;color:#990066;">Copyrights &copy; 2018 All rights reserved for FUN_ZONE.</div>        </div>              
+</div>
+
+<script>
+function animationHover(element, animation){
+    element = $(element);
+    element.hover(
+        function() {
+            element.addClass('animated ' + animation);        
+        },
+        function(){
+            //wait for animation to finish before removing classes
+            window.setTimeout( function(){
+                element.removeClass('animated ' + animation);
+            }, 2000);         
+        });
+}
+$(document).ready(function(){
+    $('#last').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last1').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last2').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+$(document).ready(function(){
+    $('#last3').each(function() {
+        animationHover(this, 'bounce');
+    });
+});
+
+
+function validateForm() {
+    var user = document.forms["myForm"]["uname"].value;
+    var email=document.forms["myForm"]["ename"].value;
+	 var contact=document.forms["myForm"]["cname"].value;
+	var feedback=document.forms["myForm"]["fname"].value;
+	
+	
+	var uRexEx=/^([A-Za-z0-9]{3,10})$/	;
+	var eRexEx= /^([A-Za-z0-9\-\_\.]{3,10})+\@([A-Za-z]{3,6})+\.([A-Za-z]{2,4})$/;
+	var cRexEx= /^([A-Za-z0-9]{3,10})$/;	
+	var faRexEx=/^([A-Za-z0-9]{3,100})$/	;
+	
+	
+	if (user == "") {
+		document.getElementById("e1").innerHTML="*Please Enter Data*";
+        return false;
+
+		}
+
+	else if(user!="")
+			{
+			document.getElementById("e1").innerHTML="";
+			
+				if(uRexEx.test(user)==false)
+				{
+					document.getElementById("e1").innerHTML="*Please Enter Correct Data*";
+					return false;
+				}
+			}
+	
+	
+	
+	if (email == "") {
+		document.getElementById("e2").innerHTML="*Please Enter Data*";
+        return false;
+	 }
+	
+	else if(email!=""){
+
+				document.getElementById("e2").innerHTML="";
+				
+				if(eRexEx.test(email)==false)
+				{
+					document.getElementById("e2").innerHTML="*Please Enter Correct Data*";
+					return false;
+				}
+			}
+	
+	
+	
+	
+	if (contact == "") {
+		document.getElementById("e3").innerHTML="*Please Enter Data*";
+        return false;
+ }
+	
+	else if(contact!="")
+			{
+				document.getElementById("e3").innerHTML="";
+
+				if(cRexEx.test(contact)==false)
+				{
+					document.getElementById("e3").innerHTML="*Please Enter Correct Data*";
+					return false;
+				}
+			}
+			
+	
+	
+	
+	if (feedback == "") {
+		document.getElementById("e4").innerHTML="*Please Enter Data*";
+        return false;
+	
+    }
+	
+	else if(feedback!="")
+			{
+				document.getElementById("e4").innerHTML="";
+			
+				if(fRexEx.test(feedback)==false)
+				{
+					document.getElementById("e4").innerHTML="*Please Enter Data*";
+					return false;
+				}
+			}
+	if(uRexEx.test(user)==true && eRexEx.test(email)==true &&  cRexEx.test(contact)==true && fRexEX.test(feedback)==true )
+			{	  
+			return true;
+			}
+
+}
+
+
+</script>
+
+</body>
+</html>
